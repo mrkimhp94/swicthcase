@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="ungdungmaytinh.html">
+    <input id="tren" type="text" size="30">
+    <input id="duoi" type="text" size="30"><br>
+
+    <button type="button" onclick="add()">addition(+)</button>
+    <button type="button" onclick="sub()">Substraction(-)</button>
+    <button type="button" onClick="mul()">Multiplication(X)</button>
+    <button type="button" onClick="div()">Division(/)</button>
+    <script>
+        let a = document.getElementById('tren');
+        let b = document.getElementById('duoi');
+        let result = 0;
+
+        function add() {
+            result = parseFloat(a.value) + Number(b.value);
+            alert(result);
+        }
+
+        function sub() {
+            result = parseFloat(a.value) - Number(b.value);
+            alert(result);
+        }
+
+        function mul() {
+            result = parseFloat(a.value) * Number(b.value);
+            alert(result);
+        }
+
+        function div() {
+            result = parseFloat(a.value) / Number(b.value);
+            alert(result);
+        }
+
+
+    </script>
+</form>
+
+</body>
+</html>
